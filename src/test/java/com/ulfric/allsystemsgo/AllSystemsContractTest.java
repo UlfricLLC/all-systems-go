@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import com.google.common.truth.Truth8;
 
-class AllSystemsContractTest {
+class AllSystemsArgumentsProviderTest {
 
 	@Test
 	void testFileSystemProvider() {
-		Truth8.assertThat(AllSystemsContract.fileSystemProvider())
+		Truth8.assertThat(new AllSystemsArgumentsProvider().provideArguments(null))
 			.hasSize(3);
 	}
 

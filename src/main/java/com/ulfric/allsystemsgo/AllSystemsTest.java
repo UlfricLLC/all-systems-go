@@ -6,12 +6,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ArgumentsSource;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @ParameterizedTest
-@MethodSource("fileSystemProvider")
+@ArgumentsSource(AllSystemsArgumentsProvider.class)
 public @interface AllSystemsTest {
 
 }
