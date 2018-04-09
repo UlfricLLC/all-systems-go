@@ -4,7 +4,7 @@ Facilitator for running JUnit 5 nio tests against all operating system implement
 ## example
 
 ```
-class ExampleTest implements AllSystemsContract {
+class ExampleTest {
 
     @AllSystemsTest
     void testAllSystems(FileSystem fileSystem) {
